@@ -1,6 +1,21 @@
 /**Base styles - large screen**/ 
+html {
+  font-size: 100%; /*16 pt, or 1 rem*/
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'work sans';
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
 details > summary {
   padding: 0.5rem 0 0.5rem 0;
+}
+
+details > summary:hover {
+  font-weight: bold;
 }
 
 .answer-text {
@@ -10,21 +25,25 @@ details > summary {
 nav {
 	display: grid;
 	grid-template-columns: 1fr 60vw;
-	  position: absolute;
-	  padding: 0;
-	  font-family: 'open sans condensed';
-    font-size: 150%;
-	  line-height: 0.5pt;
-	  width: 100vw;
-	  z-index: 2;
+	position: absolute;
+	padding: 0;
+	font-family: 'open sans condensed';
+  font-size: 1.5rem;
+  line-height: 0.5pt;
+	width: 100vw;
+	z-index: 2;
 	}
 
 .nav-list-item {
-    	  padding: 8pt;
+    padding: 8pt;
 	  text-transform: uppercase;
 	  letter-spacing: 0.5pt;
 	  justify-self: end;
-	}
+  }
+  
+  .nav-list-item:hover {
+    color: pink;
+  }
 
 	#nav-list {
 	  display: flex;
@@ -34,8 +53,8 @@ nav {
 	  list-style: none;
 	  color: white;
 	  padding: 0 1rem 0 1rem;
-	}
-
+  }
+  
 #inner-nav-container {  
 	display: flex;
 	justify-content: flex-end;
@@ -43,11 +62,11 @@ nav {
 
 #logo-container {
 	font-family: 'open sans condensed', sans-serif;
-	font-size: 95%;
 	display: flex;
-        align-items: center;
+  align-items: center;
 	color: white;
-	text-decoration: none;
+  text-decoration: none;
+  margin-left: 0.5rem;
 }
 
 nav img {
@@ -66,38 +85,24 @@ nav img:hover {
 	}
 
 summary {
-	list-style-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1595523166/more_ebtigc.png");
 	width: auto;
 	padding: 0.5rem;
 }
 
 details {
-	padding-left: 1rem;
-  padding-right: 1rem;
-  list-style-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1595523166/more_ebtigc.png");
-
+	padding: 0 1rem 0 1rem;
 }
-
-
-.body-text {
-	font-family: 'work sans';
-	font-size: 11pt;
-	
-}
-
 
 #small-samples-container {
 display: none;
 }
 
-
 h4 {
-  font-family: 'lato';
+  font-family: 'work sans';
   text-transform: uppercase;
-  font-size: 120%;
+  font-size: 1.2rem;
   text-align: center;
 }
-
 
 iframe {
   border: 0;
@@ -105,18 +110,19 @@ iframe {
   height: 250px;
 }
 
+iframe:hover {
+  filter: opacity(50%);
+}
+
 #my-process-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  background-image:;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   margin-left: 5vw;
   margin-right: 5vw;
   min-height: 100vh;
+  max-width: 100vw;
 }
 
 .process-container {
@@ -141,7 +147,7 @@ iframe {
 }
 
 .process-cell-heading {
-  font-size: 150%;
+  font-size: 1.5rem;
 }
 
 .process-description-text {
@@ -175,7 +181,7 @@ iframe {
 
 h3 {
   font-family: 'open sans condensed';
-  font-size: 100%;
+  font-size: 1rem;
   text-transform: uppercase;
   align-self: center;
 }
@@ -195,25 +201,10 @@ h3 {
 #pricing-box {
   display: flex;
   flex-direction: column;
-  font-size: 150%;
+  font-size: 1.5rem;
   padding: 0 3rem 0 3rem;
   align-items: center;
   justify-items: center;
-}
-
-#more-tracks-link {
-  display: none;
-}
-
-
-
-html {
-  font-size: 100%;
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'work sans';
 }
 
 .main-container {
@@ -223,51 +214,21 @@ body {
     }
 
 #hero-image {
-      background-image:       url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1582759107/DSC00010_resized_gvayvi.jpg");
-      background-size: cover;
-      background-position: center;
-  background-attachment: fixed;
-      text-align: center;
-      min-width: 100%;
-      filter: grayscale(25%);
-    }
+  background: white url("images/resized-kurt.jpg") no-repeat fixed center;
+  background-size: auto;
+  text-align: center;
+  max-width: 100vw;
+  }
 
 #hero-name {
-  justify-self: center;
+  font: 100 6.5rem 'cedarville cursive';
   color: white;
-  font-family: 'cedarville cursive';
-  font-weight: 100;
+  justify-self: center;
   text-shadow: 5px 5px 10px #FD1F6D;
-  font-size: 650%;
   margin-top: 15vh;
 }
 
 #hero-name:hover {
-  color: pink;
-}
-#psuedo-nav {
-  display: none;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-family: 'open sans condensed';
-  background-color: black;
-  font-size: 1.5rem;
-  font-weight: lighter;
-}
-#psuedo-nav p {
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 0.3125rem; 
-  margin-bottom: 1px;/**equal to 5px**/
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 90%;
-}
-
-#psuedo-nav p:hover {
   color: pink;
 }
 
@@ -276,38 +237,13 @@ a { /**prevents automatic hyperlinks**/
   text-decoration: none;
 }
 
-
-#pricing-guide {
-  display: flex;
-  flex-direction: column;
-  background-color: #8ED081;
-}
-
-#rates-text{
-}
-
-#pricing-1 {
-  background-color: silver;
-  margin: 0.3125rem;
-}
-
 h2 {
  margin: 0;
  padding: 1rem 0 1rem 0;
- font-family: 'cedarville cursive';
- font-size: 300%;
- font-weight: lighter;
+ font: lighter 3rem 'cedarville cursive';
  text-align: center;
 }
 
-h2:hover {
-      color: pink;
-      font-size: 302%;
-      letter-spacing: inherit;
-      animation-name: wiggle-letters;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-}
 @keyframes wiggle-letters {
   0% {letter-spacing: 1px;}
   10% {filter: hue-rotate(180deg);}
@@ -324,7 +260,6 @@ h2:hover {
 }
 
 #pricing-grid-container {
-  background-color:;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -332,13 +267,11 @@ h2:hover {
   border-bottom: 1px solid white;
   margin: 0.625rem 3rem 0.625rem 3rem;
   width: 40vw;
-
 }
 
 #pricing {
+  font: normal 2rem;
   color: black;
-  font-size: 100%;
-  font-weight: normal;
 }
 
 div h3 {
@@ -360,15 +293,6 @@ div h3 {
   padding: 0.625rem;
 }
 
-#contact {
-  justify-content: center;
-  color: black;
-  font-family: 'cedarville cursive';
-  font-weight: 100;
-  font-size: 300%;
-  padding: 2rem 0 2rem 0;
-}
-
 #contact-container {
   display: flex;
   flex-direction: column;
@@ -382,7 +306,32 @@ div h3 {
   height: 30vh;
 }
 
+@keyframes holographicEffect {
+  10% {filter: hue-rotate(180deg);}
+  20% {filter: hue-rotate(270deg);}
+  30% {filter: hue-rotate(360deg);}
+  40% {filter: hue-rotate(270deg);}
+  50% {filter: hue-rotate(180deg);}
+  60% {filter: hue-rotate(270deg);}
+  70% {filter: hue-rotate(360deg);}
+  80% {filter: hue-rotate(270deg);}
+  90% {filter: hue-rotate(180deg);}
+  100%{filter: hue-rotate(270deg);}
+  }
 
+#contact-container:hover {
+  animation-name: holographicEffect;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#email-link {
+  font-size: 1.5rem;
+}
+
+#email-link:hover {
+  color: magenta;
+}
 
 #about-container {
   display: grid;
@@ -404,20 +353,13 @@ div h3 {
   padding: 0.625rem;
   align-items: start;
   justify-items: center;
-  border-left: 1px solid #E2CBDB;
-  border-right: 1px solid #E2CBDB;
   width: 90vw;
 }
 
 #samples-text {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  border-bottom: solid;
-  border-width: 1px;
-  border-color: #E2CBDB;
+  margin: 0 2rem 0 2rem;
+  border-bottom: 1px solid #E2CBDB;
 }
-
- 
 
 #screen-adjuster-container {
   display: grid;
@@ -426,14 +368,13 @@ div h3 {
 }
 
 #contact-info {
-  text-align: center;
-  
+  text-align: center; 
 } 
 #social-media-container {
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr 1fr;
-   font-size: 95%;
+   font-size: 0.95rem;
    text-align: center;
    width: 45vw;
 }
@@ -444,17 +385,15 @@ div h3 {
   padding-top: 0.625rem;
   max-height: 50px;
   max-width: 50px;
-  font-size: 90%;
+  font-size: 0.9rem;
   border-style: none;
 }
 
 .footer-container-wrapper {
 	  display: flex;
-	  justify-content: center;
-	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1582759107/DSC00010_resized_gvayvi.jpg");
+    justify-content: center;
+    background: white url("images/resized-kurt.jpg") no-repeat fixed bottom center;
 	  background-size: cover;
-	  background-position: bottom center;
-	  background-attachment: fixed;
 	  height: auto;
 	  padding-top: 5rem;
 	}
@@ -477,7 +416,7 @@ div h3 {
 	  color: silver;
 	  grid-template-columns: 20vw 1fr 20vw;
 	  grid-template-rows: 1fr;
-	  font-size: 95%;
+	  font-size: 0.95rem;
 	  padding: 2rem 1rem 1rem 1rem;
 	  line-height: 1.5;
 	}
@@ -512,8 +451,6 @@ div h3 {
 	 display: inline;
 	}
 	
-   
-
 /********************XS STYLES***********************/
 @media only screen
   and (max-device-width: 480px) {
@@ -532,7 +469,7 @@ nav {
 }
 
 h2 {
-	font-size: 300%;
+	font-size: 3rem;
 
 }
 
@@ -551,9 +488,9 @@ h2 {
 iframe {
 	display: flex;
 	border: 0;
-  	width: 100%;
-  	height: 42px;
-        align-self: center;
+  width: 100%;
+  height: 42px;
+  align-self: center;
 }
    
     #screen-adjuster-container {
@@ -567,10 +504,6 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  background-image:;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   min-height: 100vh;
 }
 
@@ -584,7 +517,6 @@ iframe {
   height: auto;
   justify-items: center;
   align-self: center;
-
 }
 
 .process-cell {
@@ -592,18 +524,12 @@ iframe {
   flex-direction: column;
 }
 
-.process-description-text {
-}
-
 #hero-image {
-      background-image:       url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1594843108/slide_film_6_-resize_iddnmn.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      text-align: center;
-      min-width: 100%;
-      filter: grayscale(25%);
-    }
+  background: black url("images/resized-kurt.jpg") no-repeat fixed center;
+  background-size: cover;
+  text-align: center;
+  min-width: 100%;
+  }
 
 #hero-name {
   justify-self: center;
@@ -611,7 +537,7 @@ iframe {
   font-family: 'cedarville cursive';
   font-weight: 100;
   text-shadow: 5px 5px 10px #FD1F6D;
-  font-size: 550%;
+  font-size: 5.5rem;
   margin-top: 15vh;
 }
 
@@ -635,19 +561,6 @@ summary {
 .body-text {
 	font-family: 'work sans';
 	font-size: 16pt;
-}
-
-#contact {
-  justify-self: center;
-  color: white;
-  font-family: 'cedarville cursive';
-  font-weight: 100;
-  text-shadow: 5px 5px 10px #FD1F6D;
-  font-size: 350%;
-}
-
-#contact:hover {
-  filter: opacity(100%); 
 }
 
 #contact-container {
@@ -675,7 +588,7 @@ summary {
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr 1fr;
    width: 95vw;
-   font-size: 95%;
+   font-size: 0.95rem;
    text-align: center;
    padding: 1rem;
 }
@@ -686,20 +599,16 @@ summary {
   padding-top: 0.625rem;
   max-height: 50px;
   max-width: 50px;
-  font-size: 90%;
+  font-size: 0.90rem;
   border-style: none;
 }
 
 #faq-link {
 	text-align: center;
+}
 
 }
 
-
-
-}
-
-  
 /******************S styles************************/
 @media only screen 
   and (min-device-width: 481px)
@@ -711,15 +620,12 @@ summary {
       grid-template-rows: 80vh 1fr;
     }
 
-#hero-image {
-      background-image:       url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1594843108/slide_film_6_-resize_iddnmn.jpg");
+  #hero-image {
+      background: black url("images/resized-kurt.jpg") no-repeat fixed center;
       background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
       text-align: center;
       min-width: 100%;
-      filter: grayscale(25%);
-    }
+  }
 
 #hero-name {
   justify-self: center;
@@ -727,10 +633,9 @@ summary {
   font-family: 'cedarville cursive';
   font-weight: 100;
   text-shadow: 5px 5px 10px #FD1F6D;
-  font-size: 550%;
+  font-size: 5.5rem;
   margin-top: 15vh;
 }
-
 
 #logo-container {
 	display: none;
@@ -742,7 +647,7 @@ nav {
 	  position: absolute;
 	  padding: 0;
 	  font-family: 'open sans condensed';
-    font-size: 150%;
+    font-size: 1.5rem;
 	  line-height: 0.5pt;
 	  width: 100vw;
 	  z-index: 2;
@@ -750,7 +655,7 @@ nav {
 	}
 
 .nav-list-item {
-    	  padding: 8pt;
+    padding: 8pt;
 	  text-transform: uppercase;
 	  letter-spacing: 0.5pt;
 	}
@@ -784,8 +689,7 @@ iframe {
   display: grid;  
   padding: 0.625rem;
   width: auto;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin: 0 5vw 0 5vw;
   place-content: center;
 }
 
@@ -807,19 +711,7 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   min-height: 100vh;
-}
-
-#contact {
-  justify-self: center;
-  color: white;
-  font-family: 'cedarville cursive';
-  font-weight: 100;
-  text-shadow: 5px 5px 10px #FD1F6D;
-  font-size: 450%;
 }
 
 }
@@ -843,15 +735,10 @@ iframe {
   border-right: 1px solid #E2CBDB;
 }
 
-
-.body-text {
+body {
   font-size: 14pt;
 }
-
 }
-
-
-
 
 /******************L styles************************/
 @media only screen 
@@ -869,8 +756,18 @@ iframe {
   justify-items: center;
   border-left: 1px solid #E2CBDB;
   border-right: 1px solid #E2CBDB;
+  margin-bottom: 20vh;
 }
 
+#my-process-section {
+  margin-top: 20vh;
+}
 }
 
 /******************XL styles************************/
+@media only screen 
+  and (min-device-width: 1200px) {
+    #samples-container {
+      margin-bottom: 20vh;
+    }
+  }

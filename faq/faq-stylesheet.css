@@ -6,7 +6,6 @@ details > summary {
   background-color: #E2CBDB;
   color:black;
   padding: 1rem 0 1rem 0;
-  font-weight: 300;
 }
 
 details > summary:hover {
@@ -46,10 +45,8 @@ body {
 	  grid-template-columns: 1fr 60vw;
 	  position: absolute;
 	  padding: 0;
-	  font-family: 'open sans condensed';
-    font-size: 150%;
-	  line-height: 0.5pt;
-	  width: 100vw;
+	  font: 100 1.5rem/0.5pt 'open sans condensed';
+	  width: 95vw;
 	  z-index: 2;
 	}
 
@@ -90,7 +87,7 @@ nav img:hover {
 	.link {
 	  text-decoration: none;
 	  color: inherit;
-	  font-weight: 700;
+	  font-weight: 200;
 	}
 
 
@@ -100,28 +97,10 @@ nav img:hover {
 	  letter-spacing: 0.5pt;
 	}
 
-#back-link {
-}
-
-	#services-link:hover {
-	  color: #pink;
-
+	.nav-list-item:hover {
+		color:pink;
 	}
 
-	#about-link:hover {
-	   color: pink;
-	}
-	#contact-link:hover {
-  color: pink;
-	}
-	#blog-link:hover {
-    color: pink;
-	}
-
-#back-link:hover {
-   color: pink;
-
-}
 	.title-container {
 	  display: block;
 	  margin-left: auto;
@@ -155,13 +134,6 @@ nav img:hover {
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 	animation-direction: alternate-reverse;
-}
-#second {
-
-}
-
-#third {
-
 }
 
 .section {
@@ -326,9 +298,15 @@ h3 {
 		font-size: 100%;
 	}
 
+	h1 {
+		font-weight: 800;
+		font-size: 5.5rem;
+		line-height: 4rem;
+		  }
+
 nav {
 	  padding: 0;
-	  font-family: 'source sans pro'
+	  font-family: 'source sans pro';
 	  width: 99vw;
 	}
 
@@ -362,10 +340,6 @@ nav {
 
 #title-grid {
 	display: none;
-}
-
-#title-text-skypath {
-
 }
 
 .title-text-container {
@@ -439,18 +413,25 @@ h2 {
 	and (max-device-width: 767px) {
 	     body {
 		font-size: 100%;
-	}
-.section {
-  min-height: 100vh;
-  margin-left: 0;
-  margin-right: 0;
-}
-		
-#photo-container {
-  display: none;
-}
+		}
 
-#about-section-container {
+		h1 {
+			font-weight: 800;
+			font-size: 5.5rem;
+			line-height: 4rem;
+			  }
+		
+		.section {
+  		min-height: 100vh;
+  		margin-left: 0;
+  		margin-right: 0;
+		}
+		
+		#photo-container {
+  		display: none;
+		}
+
+		#about-section-container {
 	  display: grid;
 	  grid-template-columns: 1fr;
 }
@@ -486,18 +467,13 @@ h2 {
 	and (max-device-width: 1199px) {
 	     body {
 		font-size: 100%;
+		}
+
+		#small-about-title {
+		display: none;
+		}
+
 	}
-
-     #astrology-introduction {
-
-	}
-
-#small-about-title {
-	display: none;
-}
-
-}
-	
 
 	/******************XL screen*******************/
 	@media only screen
