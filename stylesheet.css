@@ -1,5 +1,11 @@
 /**Base styles - large screen**/ 
+details > summary {
+  padding: 0.5rem 0 0.5rem 0;
+}
 
+.answer-text {
+  padding-top: 1rem;
+}
 
 nav {
 	display: grid;
@@ -60,15 +66,15 @@ nav img:hover {
 	}
 
 summary {
-	
+	list-style-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1595523166/more_ebtigc.png");
 	width: auto;
 	padding: 0.5rem;
-
 }
 
 details {
 	padding-left: 1rem;
   padding-right: 1rem;
+  list-style-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1595523166/more_ebtigc.png");
 
 }
 
@@ -136,13 +142,10 @@ iframe {
 
 .process-cell-heading {
   font-size: 150%;
-
 }
 
 .process-description-text {
   align-self: center;
-
-
 }
 
 #process-cell-1 {
@@ -162,7 +165,7 @@ iframe {
   width: 64px;
   height: auto;
   align-self: center;
-  padding-top: 0.5rem;
+  padding-top: 2.5rem;
 }
 
 #faq-link {
@@ -181,15 +184,21 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  width: 90vw;
+  width: 85vw;
   height: auto;
   justify-items: center;
   align-self: center;
   grid-gap: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 2rem;
-  margin-top: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+#pricing-box {
+  display: flex;
+  flex-direction: column;
+  font-size: 150%;
+  padding: 0 3rem 0 3rem;
+  align-items: center;
+  justify-items: center;
 }
 
 #more-tracks-link {
@@ -352,48 +361,42 @@ div h3 {
 }
 
 #contact {
-  justify-self: center;
-  color: white;
+  justify-content: center;
+  color: black;
   font-family: 'cedarville cursive';
   font-weight: 100;
-  text-shadow: 5px 5px 10px #FD1F6D;
-  font-size: 650%;
-}
-
-#contact:hover {
-  filter: opacity(100%); 
+  font-size: 300%;
+  padding: 2rem 0 2rem 0;
 }
 
 #contact-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-self: center;
-  margin: 1rem 1rem 1rem 5vw;
-  background-color: #E2CBD8;
+  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1595535631/atom_gdlrho.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-left: 7vw;
+  height: 30vh;
 }
+
+
+
 #about-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   padding: 0.625rem;
   justify-content: center;
-  border-bottom: solid;
-  border-width: 1px;
-  border-color: #E2CBDB;
-  margin: 0 5vw 0 5vw;
+  width: 85vw;
 
 }
 #about {
-  margin-left: 3rem;
-  border-bottom: solid;
-  border-width: 1px;
-  border-top: solid;
-  border-width: 1px;
-  border-color: #E2CBDB;
-  margin: 2rem;
+  width: 85vw;
 }
 #samples-container {
-  margin: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
@@ -403,6 +406,7 @@ div h3 {
   justify-items: center;
   border-left: 1px solid #E2CBDB;
   border-right: 1px solid #E2CBDB;
+  width: 90vw;
 }
 
 #samples-text {
@@ -431,7 +435,7 @@ div h3 {
    grid-template-rows: 1fr 1fr 1fr;
    font-size: 95%;
    text-align: center;
-   padding: 1rem;
+   width: 45vw;
 }
     .social-media-icons:hover {
       filter: opacity(50%);
@@ -617,17 +621,15 @@ summary {
 
 .gear-story-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   width: auto;
   height: auto;
   justify-items: center;
   align-self: center;
   grid-gap: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 2rem;
-  margin-top: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
 }
 
 .body-text {
@@ -641,7 +643,7 @@ summary {
   font-family: 'cedarville cursive';
   font-weight: 100;
   text-shadow: 5px 5px 10px #FD1F6D;
-  font-size: 450%;
+  font-size: 350%;
 }
 
 #contact:hover {
