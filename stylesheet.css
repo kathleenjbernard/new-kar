@@ -10,6 +10,10 @@ body {
   max-height: 100vh;
 }
 
+main {
+  max-width: 100vw;
+}
+
 details > summary {
   padding: 0.5rem 0 0.5rem 0;
 }
@@ -24,13 +28,13 @@ details > summary:hover {
 
 nav {
 	display: grid;
-	grid-template-columns: 1fr 60vw;
+	grid-template-columns: 1fr 2fr;
 	position: absolute;
 	padding: 0;
 	font-family: 'open sans condensed';
   font-size: 1.5rem;
   line-height: 0.5pt;
-	width: 100vw;
+	width: 95vw;
 	z-index: 2;
 	}
 
@@ -66,7 +70,6 @@ nav {
   align-items: center;
 	color: white;
   text-decoration: none;
-  margin-left: 0.5rem;
 }
 
 nav img {
@@ -106,8 +109,8 @@ h4 {
 
 iframe {
   border: 0;
-  width: 250px;
-  height: 250px;
+  width: 15.6rem;
+  height: 15.6rem;
 }
 
 iframe:hover {
@@ -119,10 +122,10 @@ iframe:hover {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 100vh;
-  max-width: 100vw;
+  max-width: 90vw;
 }
 
 .process-container {
@@ -130,7 +133,8 @@ iframe:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: none;
   color: black;
-  width: 100%;
+  /*width: 100%; */
+  max-width: 100vw;
   height: auto;
   min-height: 30vh;
   justify-content: center;
@@ -143,7 +147,7 @@ iframe:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .process-cell-heading {
@@ -215,7 +219,7 @@ h3 {
 
 #hero-image {
   background: white url("images/resized-kurt.jpg") no-repeat fixed center;
-  background-size: auto;
+  background-size: cover;
   text-align: center;
   max-width: 100vw;
   }
@@ -514,6 +518,7 @@ iframe {
   background-color: none;
   color: black;
   width: 95vw;
+  margin: 0;
   height: auto;
   justify-items: center;
   align-self: center;
@@ -725,8 +730,8 @@ iframe {
 #samples-container {
   margin: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
   grid-gap: 0.625rem;
   padding: 0.625rem;
   align-items: start;
@@ -735,9 +740,12 @@ iframe {
   border-right: 1px solid #E2CBDB;
 }
 
-body {
-  font-size: 14pt;
+
+
+#logo-container {
+	display: none;
 }
+
 }
 
 /******************L styles************************/
