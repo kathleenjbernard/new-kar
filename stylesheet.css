@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: 'work sans';
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -163,7 +164,7 @@ padding: 0 1rem 0 1rem;
   min-height: 30vh;
   justify-content: center;
   align-self: center;
-  grid-gap: 1rem;
+  grid-gap: 0;
   padding: 1rem;
 }
 
@@ -434,18 +435,38 @@ main {
   margin-right: auto;
 }
 
-nav ul {
-  display: none;
+nav {
+  display: block;
+  margin: 60vh auto auto auto;
+  position: absolute;
 }
 
-nav {
+nav ul {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+}
+
+nav ul li {
+  padding: 1rem 1px 1rem 1rem;
+  line-height: .4;
+  font-size: 1.7rem;
+}
+
+nav ul li a {
+  background-color: black;
+}
+
+#logo-container {
   display: none;
 }
 
 h1 {
   font: italic 700 10rem 'kanit', sans-serif;
   color: #E2CBD8;
-  justify-self: center;
+  justify-self: flex-start;
+  text-align: left;
   text-shadow: none;
   margin-top: 0;
   margin-bottom: 10vh;
@@ -460,12 +481,11 @@ h1 {
 #small-screen-subtitle {
   display: block;
   color: white;
-  font: 2rem 'open sans condensed';
+  font: 1.5rem 'open sans condensed';
   letter-spacing: 1pt;
   text-transform: uppercase;
   margin-top: -4rem;
-  text-align: left;
-  padding-left: 1rem;
+  text-align: center;
 }
 
 #hero-image-container {
@@ -478,8 +498,8 @@ h1 {
   background-color: black;
   background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1581462490/slide_film_12_qa5w4w.jpg");
   background-attachment: scroll;
-  background-size: auto 65%;
-  background-position: bottom;
+  background-size: auto 75%;
+  background-position: 40% 100%;
   text-align: center;
   }
 
@@ -556,8 +576,6 @@ padding: 0 1rem 0 1rem;
       border: none;
     }
 
-  
-
   #pricing-box {
       padding-top: 12vh;
       width: 100%;
@@ -624,8 +642,8 @@ iframe {
    #footer-container-wrapper {
       display: flex;
       justify-content: center;
-      background: black url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1581462490/slide_film_12_qa5w4w.jpg") repeat fixed;
-      background-size: 150% auto;
+      background-color: #E2CBD8;
+      background-image: none;
       height: auto;
       padding-top: 1rem;
       width: 100%;
@@ -644,14 +662,15 @@ iframe {
       grid-template-columns: 100%;
       grid-template-rows: 1fr 1fr 1fr;
       grid-gap: 0.5rem;
-      width: 95%;
+      width: 100%;
       color: silver;
       font-size: 1rem;
       line-height: 1.5;
       padding: 1rem 0 1rem 0;
+      height: 30vh;
     }
     .column-1, .column-3 {
-      display: none;
+      padding: 1rem;
     }
 
 }
@@ -660,6 +679,12 @@ iframe {
 @media only screen 
   and (min-device-width: 481px)
   and (max-device-width: 767px) {
+
+    nav ul {
+      width: 30vw;
+      background-color: none;
+      filter: none;
+    }
     
     body {
       font-size: 130%;
@@ -676,35 +701,55 @@ iframe {
       margin-right: auto;
     }
     
-    nav ul {
-      display: none;
-    }
-    
     nav {
-      display: none;
+      display: block;
+      margin: 72vh auto auto auto;
+      position: absolute;
     }
     
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+    
+    }
+    
+    nav ul li {
+      padding-right: 1px;
+    }
+    
+    nav ul li a {
+      padding: 0 0.3rem 0 0.3rem;
+      background-color: black;
+    }
+    
+    #logo-container {
+      display: none;
+    }
+   
     h1 {
-      font: italic 700 10rem 'kanit', sans-serif;
-      color: silver;
+      font: italic 700 12rem 'kanit', sans-serif;
+      color: #E2CBD8;
       justify-self: center;
       text-shadow: none;
-      margin-top: 25vh;
+      margin-top: 0;
+      margin-bottom: 10vh;
+      border-bottom: 15px solid white;
       width: 100%;
       height: auto;
       line-height: 0.7;
-    
+      background-color: #ada7c9;
     }
 
     #small-screen-subtitle {
       display: block;
       color: white;
-      font: 2rem 'open sans condensed';
+      font: 1.5rem 'open sans condensed';
       letter-spacing: 1pt;
       text-transform: uppercase;
-      margin-top: -4rem;
-      text-align: left;
-      padding-left: 1rem;
+      margin-top: -3.8rem;
+      text-align: center;
+
     }
     
     #hero-image-container {
@@ -717,8 +762,8 @@ iframe {
       background-color: black;
       background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1581462490/slide_film_12_qa5w4w.jpg");
       background-attachment: scroll;
-      background-size: auto 65%;
-      background-position: bottom;
+      background-size: auto 75%;
+      background-position: 40% 100%;
       text-align: center;
       }
     
@@ -860,7 +905,7 @@ iframe {
        #footer-container-wrapper {
           display: flex;
           justify-content: center;
-          background: #E2CBD8 url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1595535631/atom_gdlrho.png") repeat fixed;
+          background: #E2CBD8 url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1596132789/science_4_u3dc9w.png") repeat fixed;
           background-size: 5rem;
           height: auto;
           padding-top: 1rem;
@@ -889,12 +934,29 @@ iframe {
         }
 
 }
- 
 
 /******************M styles************************/
 @media only screen 
   and (min-device-width: 768px)
   and (max-device-width: 990px) {
+
+    body {
+      overflow-x: hidden;
+    }
+
+  h1 {
+    font: italic 700 12rem 'kanit', sans-serif;
+    color: #E2CBD8;
+    justify-self: center;
+    text-shadow: none;
+    margin-top: 0;
+    margin-bottom: 10vh;
+    padding-top: 5vh;
+    width: 100%;
+    height: auto;
+    line-height: .89;
+    background-color: #ada7c9;
+    }
 
   main {
     font-size: 120%;
@@ -914,12 +976,20 @@ iframe {
     max-width: 100%;
   }
 
+  #hero-image {
+    background: black url("images/resized-kurt.jpg") no-repeat fixed center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: 50% 100%;
+    text-align: center;
+    }
+
   #process-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: none;
     color: black;
-    width: 100%;
+    width: 95%;
     height: auto;
     min-height: 30vh;
     justify-content: center;
@@ -933,6 +1003,7 @@ iframe {
   #small-samples-container {
     display: none;
   }
+
     #samples-container {
       margin: 2rem;
       display: grid;
@@ -949,7 +1020,7 @@ iframe {
     margin-right: auto;
     width: 85vw;
     border: 1px solid #E2CBD8;
-    padding: 1.5rem 1rem 1.5rem 1rem;
+    padding: 1.5rem 0 1.5rem 0;
       }
 
 }
@@ -982,7 +1053,7 @@ iframe {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: none;
     color: black;
-    width: 100%;
+    width: 95%;
     height: auto;
     min-height: 30vh;
     justify-content: center;
@@ -1012,7 +1083,7 @@ iframe {
     margin-right: auto;
     width: 85vw;
     border: 1px solid #E2CBD8;
-    padding: 1.5rem 1rem 1.5rem 1rem;
+    padding: 1.5rem 0 1.5rem 0;
       }
 
 }
@@ -1025,4 +1096,9 @@ iframe {
     #small-samples-container {
       display: none;
     }
-    }
+
+  h1 {
+
+  }
+
+  }
