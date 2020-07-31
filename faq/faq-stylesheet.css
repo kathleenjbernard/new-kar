@@ -179,8 +179,6 @@ h3 {
   justify-content: center;
   height: 70vh;
 }
-	
-	
 
 #social-media-container {
 	   display: grid;
@@ -267,6 +265,20 @@ and (max-device-width: 375px) {
 	font-size: 130%;
 }
 
+body {
+	background-image: #f8fad7 url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1595536230/question_2_fohio8.png");
+	background-size: 5rem;
+	background-repeat: repeat;
+	  background-attachment: fixed;
+	  font-family: 'work sans';
+	  font-size: 100%;
+	  padding: 0;
+	  margin: 0;
+	  background-color: white;
+	  width: 100%;
+	  overflow-x: hidden;
+	}
+
 h1 {
 	margin-top: 20vh;
 	font-weight: 800;
@@ -326,7 +338,7 @@ details > summary {
 	font-weight: 300;
 	background-color: #E2CBDB;
 	color:black;
-	padding: 1rem 0 1rem 0;
+	padding: 1rem;
   }
   
   details > summary:hover {

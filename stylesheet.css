@@ -214,6 +214,7 @@ padding: 0 1rem 0 1rem;
 
   #covid-text p {
     width: 22rem;
+    padding: 1rem;
   }
 
   #pricing-box p {
@@ -224,7 +225,11 @@ padding: 0 1rem 0 1rem;
 
 
   .thick-link {
-      border-bottom: 7px solid #E2CBD8;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    padding: 0.5rem 0 0.5rem;
+    background-color: #E2CBD8;
   }
 
   main a:hover {
@@ -437,7 +442,7 @@ main {
 
 nav {
   display: block;
-  margin: 60vh auto auto auto;
+  margin: 50vh auto auto auto;
   position: absolute;
 }
 
@@ -466,11 +471,11 @@ h1 {
   font: italic 700 10rem 'kanit', sans-serif;
   color: #E2CBD8;
   justify-self: flex-start;
-  text-align: left;
+  text-align: center;
   text-shadow: none;
   margin-top: 0;
   margin-bottom: 10vh;
-  border-bottom: 15px solid white;
+  border-bottom: 15px solid rgb(255, 0, 157);
   width: 100%;
   height: auto;
   line-height: 0.7;
@@ -479,14 +484,14 @@ h1 {
 }
 
 #small-screen-subtitle {
-  display: block;
+  display: none;} /*
   color: white;
   font: 1.5rem 'open sans condensed';
   letter-spacing: 1pt;
   text-transform: uppercase;
   margin-top: -3.8rem;
   text-align: center;
-}
+} */
 
 #hero-image-container {
   display: grid;
@@ -580,6 +585,8 @@ padding: 0 1rem 0 1rem;
       padding-top: 12vh;
       width: 100%;
       text-align: center;
+      background-image: ;
+      background-size: contain;
   }
 
   #pricing-box p {
