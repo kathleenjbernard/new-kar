@@ -117,6 +117,11 @@ h3 {
   text-align: center;
 }
 
+#back-to-top {
+  font-size: 90%;
+  margin: 5rem 0 3rem 0;
+}
+
 h4 {
   font-family: 'cedarville cursive';
   font-size: 2rem;
@@ -128,8 +133,9 @@ padding: 0 1rem 0 1rem;
 }
 
   details > summary {
-  padding: 0.5rem 0 0.5rem 0;
-  width: auto;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0 0 1rem 0;
 }
 
   details > summary:hover {
@@ -156,7 +162,7 @@ padding: 0 1rem 0 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: none;
   color: black;
-  width: 95%;
+  width: 100%;
   height: auto;
   min-height: 30vh;
   justify-content: center;
@@ -189,12 +195,12 @@ padding: 0 1rem 0 1rem;
     margin-top: 1rem;
   }
 
-  #process-section p {
+  #process-section-intro {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
     font-size: 1.2rem;
+    width: 95%;
   }
 
   .number-image {
@@ -209,6 +215,15 @@ padding: 0 1rem 0 1rem;
       margin: 15vh auto 0 auto;
       width: 95%;
       height: auto;
+    }
+    .answer-text {
+      display: block;
+      margin: 0.5rem auto 0.5rem auto;
+      width: 100%;
+      text-align: left;
+      padding: 1rem;
+      border: 2px solid black;
+      border-radius: 5px;
     }
 
   main a:hover {
@@ -253,6 +268,12 @@ padding: 0 1rem 0 1rem;
   iframe:hover {
       filter: opacity(50%);
     }
+
+  #faq-section > div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   
   .no-display {
@@ -521,18 +542,23 @@ h3 {
 }
 
 details {
-padding: 1rem;
 font-size: 1.2rem;
 }
 
   details > summary {
-  padding-bottom: 0.5rem;
+  padding: 0.5rem;
   width: auto;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
-
-.answer-text {
-  padding-top: 1rem;
+  .answer-text {
+    display: block;
+    margin: 0.5rem auto 0.5rem auto;
+    width: 90%;
+    text-align: left;
+    background-color: white;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
   }
 
 #process-section, #samples-section, #about-section {
@@ -545,7 +571,7 @@ font-size: 1.2rem;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   background-color: none;
   color: black;
-  width: 100%;
+  width: 100vw;
   height: auto;
   justify-content: center;
   align-self: center;
@@ -609,8 +635,8 @@ iframe {
    #footer-container-wrapper {
       display: flex;
       justify-content: center;
-      background-color: #E2CBD8;
-      background-image: none;
+      background: #E2CBD8 url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1596132789/science_4_u3dc9w.png") repeat fixed;
+      background-size: 5rem;
       height: auto;
       padding-top: 1rem;
       width: 100%;
@@ -647,8 +673,11 @@ iframe {
   and (min-device-width: 481px)
   and (max-device-width: 767px) {
 
+    #process-section-intro {
+      width: 75%;
+    }
+    
     nav ul {
-      width: 40vw;
       background-color: none;
       filter: none;
     }
@@ -670,29 +699,43 @@ iframe {
     
     nav {
       display: block;
-      margin: 40vh auto auto 55vw;
+      margin: 40vh auto auto auto;
       position: absolute;
-      width: 40vw;
-      background-color: #90a8c386;
+      width: 80%;
+      background-color: #cbade4a4;
     }
     
     nav ul {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: auto;
     
     }
     
     nav ul li {
-      padding-right: 0.5rem;
-      font-size: 2rem;
-      line-height: 1.4;
+      font: italic 700 2.7rem 'kanit', sans-serif;
+      color: #E2CBD8;
+      line-height: 1;
+      text-align: center;
+      width: 100%;
+      margin: 0.5rem 0 0.5rem 0;
     }
-    
-    nav ul li a {
-      padding: 0 0.3rem 0 0.3rem;
+
+    #nav-about {
+      background-color: #fd88ca;
     }
-    
+    #nav-samples {
+      background-color: #fd88ca;
+    }
+    #nav-faq {
+      background-color: #fd88ca;
+    }
+    #nav-contact {
+      background-color: #fd88ca;
+    }
+    #nav-process {
+      background-color: #fd88ca;
+    }
     #logo-container {
       display: none;
     }
@@ -710,30 +753,18 @@ iframe {
       line-height: 0.7;
       background-color: #ada7c9;
     }
-
-    #small-screen-subtitle {
-      display: block;
-      color: #E2CBD8;
-      font: 2rem 'open sans condensed';
-      letter-spacing: 1pt;
-      text-transform: uppercase;
-      margin-top: -3.8rem;
-      text-align: center;
-
-    }
     
     #hero-image-container {
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 100vh;
       }
-    
+
     #hero-image {
-      background-color: black;
-      background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1581462490/slide_film_12_qa5w4w.jpg");
-      background-attachment: scroll;
-      background-size: auto 75%;
-      background-position: 60% 100%;
+     
+      background: white url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1595535631/atom_gdlrho.png") repeat fixed;
+      background-size: 5rem;
+      background-attachment: fixed;
       text-align: center;
       }
     
@@ -754,6 +785,7 @@ iframe {
     
     details {
     padding: 0 1rem 0 1rem;
+    width: 80%;
     }
     
       details > summary {
@@ -794,23 +826,6 @@ iframe {
       align-self: center;
       padding-top: 1rem;
     }
-    
-     
-        #covid-text {
-          padding: 1rem;
-        }
-    
-      #pricing-box {
-          padding-top: 12vh;
-          width: 100%;
-          background-color: #F8F1FF;
-          text-align: center;
-      }
-    
-      .thick-link {
-          font-weight: bold;
-          border-bottom: 7px solid #E2CBD8;
-        }
     
       .no-display {
           display: none;
@@ -887,6 +902,9 @@ iframe {
           font-size: 1rem;
           line-height: 1.5;
           padding: 1rem 0 1rem 0;
+        }
+    #faq-section > div {
+          width: 30rem;
         }
 
 }
@@ -979,13 +997,6 @@ iframe {
       justify-items: center;
       }
 
-  #about-section {
-    margin: 0;
-    padding: 0;
-    background: #fdf7fb;
-    width: 100%;
-  }
-
   #bio-text {
     display: block;
     margin-left: auto;
@@ -994,12 +1005,13 @@ iframe {
     padding: 1.5rem 0 1.5rem 0;
       }
 
-  #process-section p {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-      }
+  #process-section-intro {
+    width: 60%;
+    }
+
+    #faq-section > div {
+      width: 25rem;
+    }
 
 }
 
@@ -1027,12 +1039,13 @@ iframe {
     background-color: #ada7c9;
     }
 
-  #process-section p {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
+    #process-section-intro {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.2rem;
+      width: 85%;
+    }
 
   nav {
     display: grid;
@@ -1088,6 +1101,10 @@ iframe {
     padding: 1.5rem 0 1.5rem 0;
       }
 
+      #faq-section > div {
+        width: 25rem;
+      }
+
 }
 
 /******************XL styles************************/
@@ -1120,10 +1137,6 @@ iframe {
       display: none;
     }
 
-    #small-screen-subtitle {
-      display: block;
-    }
-
     .gear-story-container details {
       display: block;
       margin-left: auto;
@@ -1132,13 +1145,14 @@ iframe {
       font-size: 1rem;
     }
 
+    #process-section {
+      width: 90%;
+    }
+
     #process-section p {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      min-width: 50%;
-      max-width: 80%;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
 
     #process-container {
@@ -1165,4 +1179,12 @@ iframe {
       #process-section {
         max-width: 100%;
       }
+
+      #faq-section > div {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25rem;
+      }
+
   }

@@ -14,7 +14,7 @@
     <meta property="og:title" content="Kurt Roy | Audio Engineer"/>
     <meta property="og:description" content="Recording, Mixing, and Mastering Services in Seattle, WA"/>
 </head>
-<body>
+<body id="body">
   <header>
     <nav>
       <div id="logo-container">
@@ -23,11 +23,11 @@
       </div>
       <div id="inner-nav-container">
           <ul id="nav-list">
-          <li class="nav-list-item"><a href=#process-section-title class="link" id="services-link">Process</a></li>
-            <li class="nav-list-item"><a href=#samples-section class="link" id="samples-link">My Work</a></li>
-          <li class="nav-list-item"><a href=#about class="link" id="about-me-link">About</a></li>
-          <li class="nav-list-item"><a href="faq/index.html" class="link" id="faq-link">FAQ</a></li>
-          <li class="nav-list-item"><a href=#contact-container class="link" id="blog-link">Contact</a></li>
+          <li class="nav-list-item" id="nav-process"><a href=#process-section-title class="link" id="services-link">Process</a></li>
+            <li class="nav-list-item" id="nav-samples"><a href=#samples-section class="link" id="samples-link">My Work</a></li>
+          <li class="nav-list-item" id="nav-about"><a href=#about class="link" id="about-me-link">About</a></li>
+          <li class="nav-list-item" id="nav-faq"><a href=#faq-section class="link" id="faq-link">FAQ</a></li>
+          <li class="nav-list-item" id="nav-contact"><a href=#contact-container class="link" id="blog-link">Contact</a></li>
         </ul>
         </div>
     </nav>
@@ -44,7 +44,7 @@
     <main>
         <section class="section" id="process-section">
             <h2 id="process-section-title">Let's transform your track!</h2>
-            <p>Getting your music to its final form doesn't have to be complicated. My mixing process follows four simple steps: </p>
+            <p id="process-section-intro">Getting your music to its final form doesn't have to be complicated. My mixing process follows four simple steps: </p>
             <div id="process-section">
             <div class="container" id="process-container">
                 <div class="process-cell" id="process-cell-1">
@@ -89,8 +89,12 @@
         
             <div class="gear-story-container">
                 <h2>Other Info</h2>
-                <details><summary>Pricing</summary>My standard rate is $125/song.</details>
-                <details><summary>Social Distancing Policy</summary>More time at home means more time to work on your mixes, and as a result, shorter turnaround times. All communication throughout the mixing process can be done through Zoom, via phone, text, email, or Facebook Messenger. Stay safe. &hearts;</details>
+
+                <details id="pricing-details"><summary id="pricing-summary">Pricing</summary>
+                    <div class="answer-text">My standard rate is $125/song.</div></details>
+
+                <details><summary>Social Distancing Policy</summary>
+                    <div class="answer-text">More time at home means more time to work on your mixes, and as a result, shorter turnaround times. All communication throughout the mixing process can be done through Zoom, via phone, text, email, or Facebook Messenger. Stay safe! &hearts;</div></details>
                 <details><summary><a href="faq/index.html">Frequently Asked Questions</a></summary></details>
 
             </div> <!--end of gear-story-container-->
@@ -164,12 +168,12 @@
     </section>
 
     <section class="section" id="about-section">
-        <h2 id="about">About Kurt</h2>
+        <h2 id="about">About</h2>
         <div id="about-container">
             <h3 class="no-display">Bio</h3>
-            <p class="body-text" id="bio-text">I am a freelance audio engineer and indie pop musician living in Seattle, Washington. I have more than ten years' experience recording, mixing, and mastering, and my work has seen over three million streams on Spotify and Apple Music.<br><br>
+            <p class="body-text" id="bio-text">Hi! I'm a freelance audio engineer and indie pop musician living in Seattle, Washington. I have more than ten years' experience recording, mixing, and mastering, and my work has seen over three million streams on Spotify and Apple Music.<br><br>
             I would love the opportunity to mix your single, EP, or full album.  In my home studio, I use high quality converters, studio monitors, and outboard gear to ensure top-tier professionalism. Your satisfication as an artist is my top priority!<br><br>
-            To get started, send me an email and I'll get back to you right away. Looking forward to working with you!</p>
+            To get started, send me an email with a brief description of your goals and I'll get back to you right away. Looking forward to working with you!</p>
         </div>
         </div> <!--end about-container-->
         <h2>Contact</h2>
@@ -203,6 +207,65 @@
             </div> <!--end social media container-->
         </div>
     </section>
+
+    <section id="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-main-container">
+          <details><summary>What's your turnaround time?</summary>
+            <div class="answer-text">This depends on how large your project is and how many tracks you’re working on. For singles,
+                I’d say about a week. For EPs and albums, that can take anywhere from a few weeks to a
+                month. If you need a mix by a deadline, let me know and we can work that out.
+                </div></details>
+    
+    
+    <details><summary>What genres do you usually mix?</summary>
+    <div class="answer-text" id="answer-text-1">My music taste leans on the “indie rock” side, so that is a genre I’m very comfortable with.
+        However, I have mixed quite a bit of music from other genres (hip hop, americana, bluegrass, and reggaeton) so I
+        can handle basically any genre!
+        </div></details>
+    
+    <details><summary>Can you tune my vocals?</summary>
+    <div class="answer-text" id="answer-text-1">Yes, I can! Just know that tuning sounds the most natural when you capture good vocal takes
+        the first time around. Fixing it in the mix can only go so far, so make sure you’re getting close to
+        perfect as possible before mixing!
+        </div></details>
+    
+        <details><summary>Can you quantize my drums?</summary>
+          <div class="answer-text" id="answer-text-1">Yes! However, similar to tuning vocals, quantizing can only work when you try to get as
+              close to perfect as you can. Sloppy drum performances can only be tightened up so much
+              without it being noticeable.
+              </div></details>
+    
+    <details><summary>What kind of gear do you use?</summary>
+    <div class="answer-text" id="answer-text-1">I tend to mix a lot in the box these days, as recalling is so much easier - and plugins have dramatically improved. I do love to use my IRL hairball 1176 on mostly everything, but specifically on vocals, bass and drums to add that 3D compression. Other gear I have includes:<br>
+     <ul>
+        <li>Monitors: Focal Twins, Avantone</li>
+        <li>Mixcube Converters: Focusrite Clarett</li>
+        <li>Outboard Gear: Rev D 1176 from Hairball Audio, Rev A 1176 from Hairball Audio. 
+        <li>Preamps: Hairball Audio Lolas + DITRE Color pre </li>
+        <li>Plugins: I use Slate/Waves plugins - I find them to actually do something!</li>
+        <li>Microphones: 2 AKG 414 XLS, Oktava Mk12;s, Cascade Fathead II, Shure Sm57’s, Audio Technica 4040 </li>
+        <li>Instruments: Frankenstrat w/ texas special pickups, Fender J-Bass, 1997 Squier Supersonic, Roland JC40 Amplifer</li>
+        </ul>
+        </div></details>
+        
+    <details><summary>Can you also master?</summary>
+    <div class="answer-text" id="answer-text-1">I don’t typically like to master songs I’ve mixed, as it is bad practice to try and “change” the sound of something I’ve worked on with the same room, speakers and ears. I highly recommend you take your mixes to a real mastering engineer. That said, (for an additional charge) I can do my best and send you a master of your track. </div></details>
+    
+    
+    <details><summary>I want to learn more about mixing. Can I do an internship with you?</summary>
+    <div class="answer-text" id="answer-text-1">While I love sharing the knowledge I’ve learned from experience, most of my work is mixing in
+        my home studio, which doesn’t really lend itself to a super interesting experience. I typically
+        work alone, but I’m always open to sharing the things I’ve learned along the way. Shoot me an
+        email and maybe we can work something out.</div></details>
+    </div>
+
+    <h3 id="back-to-top"><a href=#body>Back to top</a></h3>
+    </section>
+
+
+
+
     </main>
     
     <section class="section" id="footer-section">
@@ -222,11 +285,11 @@
                 </div> <!--end of column 2-->
 
                 <div class="column-3" id="footer-nav-links">   
-                    <div><a href=# class="footer-reference-link">Back to top</a></div>
+                    
                     <div><a href=#process-section-title class="footer-reference-link">Process</a></div>
                     <div><a href=#samples-section class="footer-reference-link">My Work</a></div>
                     <div><a href=#about class="footer-reference-link">About</a></div>
-                    <div><a href="faq/index.html" class="footer-reference-link">FAQ</a></div>
+                    <div><a href=#faq-section class="footer-reference-link">FAQ</a></div>
                     <div><a href=#contact-container class="footer-reference-link">Contact</a></div>
                 </div>
             </footer>
