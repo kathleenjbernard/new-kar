@@ -11,10 +11,11 @@ header {
 }
 
 main {
-  width: 95vw;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-top: 2rem solid #E2CBD8;
 }
 
 nav {
@@ -81,13 +82,8 @@ a {
   font-weight: 500;
   }
 
-h1 {
-  font: 100 6.5rem 'cedarville cursive';
-  color: white;
-  justify-self: center;
-  text-shadow: 5px 5px 10px #FD1F6D;
-  margin-top: 15vh;
-  width: 100%;
+#hero-line {
+  
 }
 
 #hero-image-container {
@@ -97,8 +93,8 @@ h1 {
   }
 
 #hero-image {
-  background: white url("images/resized-kurt.jpg") no-repeat fixed center;
-  background-size: cover;
+  background: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1596825263/sound-waves_kn9jjr.jpg") no-repeat fixed center;
+  background-size: contain;
   text-align: center;
   }
 
@@ -191,7 +187,7 @@ padding: 0 1rem 0 1rem;
       background-color: #64a6bd;
   }
 
-  #process-section-title {
+  #process-section-intro {
     margin-top: 1rem;
   }
 
@@ -268,6 +264,8 @@ padding: 0 1rem 0 1rem;
   iframe:hover {
       filter: opacity(50%);
     }
+
+  
 
   #faq-section > div {
     display: block;
@@ -369,14 +367,18 @@ padding: 0 1rem 0 1rem;
      border-style: none;
    }
 
+   #footer-section {
+     background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1596825263/sound-waves_kn9jjr.jpg");
+    
+   }
+
 
    #footer-container-wrapper {
       display: flex;
-    justify-content: center;
-    background: white url("images/resized-kurt.jpg") no-repeat fixed bottom center;
-      background-size: cover;
+      background-color: transparent;
+      justify-content: center;
       height: auto;
-      padding-top: 5rem;
+      padding-top: 10rem;
       width: 100%;
     }
 
@@ -666,12 +668,20 @@ iframe {
       padding: 1rem;
     }
 
+    #hero-line {
+      display: none;
+    }
+
 }
 
 /******************S styles************************/
 @media only screen 
   and (min-device-width: 481px)
   and (max-device-width: 767px) {
+
+    #hero-line {
+      display: none;
+    }
 
     #process-section-intro {
       width: 75%;
@@ -761,7 +771,7 @@ iframe {
       }
 
     #hero-image {
-     
+
       background: white url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1595535631/atom_gdlrho.png") repeat fixed;
       background-size: 5rem;
       background-attachment: fixed;
@@ -1113,17 +1123,35 @@ iframe {
     
     h1 {
       font: italic 700 12rem 'kanit', sans-serif;
-      color: #E2CBD8;
+      background-color:;
+      color: black;
       justify-self: center;
       text-shadow: none;
-      margin-top: 0;
       margin-bottom: 10vh;
-      padding-top: 5vh;
+      margin-top: 8vh;
+      padding-top: 10vh;
+      padding-bottom: 10vh;
       width: 100%;
       height: auto;
       line-height: .89;
-      background-color: #ada7c9;
       }
+
+    #hero-line {
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+      border-bottom: none;
+      color: black;
+      font-weight: lighter;
+      font: italic 700 6rem 'kanit', sans-serif;
+    }
+
+    #border {
+      display: block;
+      margin: auto 20vw auto 20vw;
+      height: 80vh;
+      background-image: linear-gradient(rgba(253, 209, 144, 0.267), #ff558821) 
+    }
 
   h2 {
     margin: 1rem 0 1rem 0;
@@ -1149,10 +1177,15 @@ iframe {
       width: 90%;
     }
 
-    #process-section p {
+    #process-section-intro {
       display: flex;
-      justify-content: center;
-      width: 100%;
+      justify-content: left;
+      text-align: left;
+      width: 90%;
+      font-size: 3rem;
+      margin-top: 30vh;
+      color: black;
+      line-height: .99;
     }
 
     #process-container {
@@ -1186,5 +1219,18 @@ iframe {
         margin-right: auto;
         width: 25rem;
       }
+
+    nav ul {
+      color: black;
+      background-color: #E2CBD8;
+    }
+
+    nav div {
+      color: black;
+    }
+
+    #footer-container-wrapper {
+      background-color: transparent;
+    }
 
   }
