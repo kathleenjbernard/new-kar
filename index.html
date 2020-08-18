@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Open+Sans+Condensed:wght@300&family=Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" /> <!--Bootstrap link-->
 	<link rel="stylesheet" href="stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurt Roy | Audio Mixing Engineer</title>
@@ -16,39 +17,49 @@
 </head>
 <body id="body">
   <header>
-    <nav>
-      <div id="logo-container">
-          <a href="http://kurtroyaudio.com"><img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1596058100/science_3_cpepka.png" alt="atom icon business logo"></a>
-          <div>Kurt Roy</div>
-      </div>
-      <div id="inner-nav-container">
-          <ul id="nav-list">
-          <li class="nav-list-item" id="nav-process"><a href=#process-section-title class="link" id="services-link">Process</a></li>
-            <li class="nav-list-item" id="nav-samples"><a href=#samples-section class="link" id="samples-link">My Work</a></li>
-          <li class="nav-list-item" id="nav-about"><a href=#about class="link" id="about-me-link">About</a></li>
-          <li class="nav-list-item" id="nav-faq"><a href=#faq-section class="link" id="faq-link">FAQ</a></li>
-          <li class="nav-list-item" id="nav-contact"><a href=#contact-container class="link" id="blog-link">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1596132789/science_4_u3dc9w.png" height="75" width="auto"><span id="nav-name">Kurt Roy</span></a>
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+           
+            <li class="nav-item">
+              <a class="nav-link" href="#">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
+      
   </header>
 
   <section id="hero-image-container">
       <div id="hero-image">
-          <div id="border">
-            <h1 id="hero-name">Kurt Roy</h1>
-            <h1 id="hero-line">Mixing Engineer</h1>
-          </div>
-            <div class="no-display" id="small-screen-subtitle">Mixing Engineer</div>
+          <h1>Audio Engineering<br><span style="font-family: 'cedarville cursive';">& </span>Professional Mixing Services</h1>
         </div>
-      </div>
     </section>
     <main>
         <section class="section" id="process-section">
-            <h2 id="process-section-intro">Evolving your music doesn't have to be complicated. My mixing process follows four simple steps:</h2>
+            <h2>Let's transform your track</h2>
             <div id="process-section">
             <div class="container" id="process-container">
-                <div class="process-cell" id="process-cell-1">
+                <div class="row">
+                    <div class="process-cell col-md-6 col-lg-3" id="process-cell-1">
                     <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1594681581/one_qfolcl.png" alt="step number one" class="number-image">
                     <h3 class="process-cell-heading">Upload</h3>
                     <details>
@@ -59,9 +70,9 @@
                     <strong>If sending from another DAW:</strong><br>
                      It's really helpful for me if all your stems start and stop at the same time. For example, if you have a guitar solo happening at 2:30, bounce the track so there's an empty waveform block starting at the beginning and ending at 2:30. This is a fool-proof way to ensure everything lines up correctly and saves a lot of time.
                     </details> 
-                </div> <!--end of process-cell-1-->
+                    </div> <!--end of process-cell-1-->
                 
-                <div class="process-cell" id="process-cell-2">
+                <div class="process-cell col-md-6 col-lg-3" id="process-cell-2">
                     <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1594681581/two_tmeyos.png" class="number-image">
                     <h3 class="process-cell-heading">Mix</h3>
                     <details>
@@ -69,7 +80,7 @@
                     I will organize and clean up your stems, perform any quantization on the drums and other instruments (if needed) and tune your vocals if requested. Then, I will transform your track from a rough mix to a polished first pass. Once the first pass is complete, it is run through a variety of speakers to ensure it will translate well no matter the output. Then, it is sent to you for feedback!</details>
                 </div> <!--end of process-cell-2-->
 
-                <div class="process-cell" id="process-cell-3">
+                <div class="process-cell col-md-6 col-lg-3" id="process-cell-3">
                     <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1594681582/three_mj4f0l.png" class="number-image">
                     <h3 class="process-cell-heading">Revise</h3>
                     <details>
@@ -78,17 +89,17 @@
                     With that in mind, please understand that there are certain elements I can't control - such as how the track was produced and recorded. No amount of mixing can fix recording errors.<br>
                     </details>
                 </div>
-                <div class="process-cell" id="process-cell-4">
+                <div class="process-cell col-md-6 col-lg-3" id="process-cell-4">
                     <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1594681581/four_cmfxkh.png" class="number-image">
                     <h3 class="process-cell-heading">Download</h3>
                      <details>
                          <summary class="process-description-text" id="download-description">View instructions</summary>
                     After discussing and completing mix revisions, I will send you a high quality .WAV file containing your finished mix. Your mix will be at the appropriate levels and contain enough headroom to ensure that a mastering engineer can do their best work. The rest is up to you!</details>
                 </div>
-            
+            </div>
         </div>
         
-            <div class="gear-story-container">
+            <div class="container question-container" id="gear-story-container">
                 <h2>Other Info</h2>
 
                 <details id="pricing-details"><summary id="pricing-summary">Pricing</summary>
@@ -104,117 +115,112 @@
 
         <section class="section" id="samples-section">
         <h2>Listen to my work</h2>
-        <div id="samples-container"> <!--beginning of samples grid-->
-
-            <div class="samples-cell" id="leland-blue">
+        <div class="container-md" id="samples-container"> <!--beginning of samples grid-->
+            <div class="row">
+            <div class="col-sm-6 col-lg-4 col-xl-3 samples-cell" id="leland-blue">
                 <a href="http://lelandblue.bandcamp.com/track/sofia">"Sofia..." by Leland Blue</a>
                 <iframe src="https://bandcamp.com/EmbeddedPlayer/track=3879857480/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless alt=""><a href="http://lelandblue.bandcamp.com/track/sofia">Sofia... by leland blue</a></iframe>
             </div>
 
-            <div class="samples-cell" id="paul-cherry">
+            <div class="col-sm-6 col-lg-4 col-xl-3 samples-cell" id="paul-cherry">
                 <a href="http://paulcherry.bandcamp.com/album/on-top">"On Top" by Paul Cherry</a>
                 <iframe  src="https://bandcamp.com/EmbeddedPlayer/album=2662849432/size=large/bgcol=ffffff/linkcol=63b2cc/minimal=true/track=3334948500/transparent=true/" seamless><a href="http://paulcherry.bandcamp.com/album/on-top">On Top by Paul Cherry</a></iframe>
             </div>
 
-            <div class="samples-cell" id="banadu-pure-mood">
+            <div class="col-sm-6 col-lg-4 col-xl-3 samples-cell" id="banadu-pure-mood">
                 <a href="http://banadu.bandcamp.com/album/peach-beach">"Peach Beach" by Banadu &amp; Pure Mood</a>
                 <iframe  src="https://bandcamp.com/EmbeddedPlayer/album=3258479632/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://banadu.bandcamp.com/album/peach-beach">Peach Beach by Banadu &amp; Pure Mood</a></iframe>
             </div>
 
-            <div class="samples-cell" id="lemix-j-buckley">
+            <div class="col-sm-6 col-lg-4 col-xl-3 samples-cell" id="lemix-j-buckley">
                 <a href="http://lemixjbuckleymi.bandcamp.com/album/in-service-of-a-feeling">"In Service of a Feeling" by Lemix J Buckley</a>
                 <iframe  src="https://bandcamp.com/EmbeddedPlayer/album=533786326/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/track=3202316247/transparent=true/" seamless><a href="http://lemixjbuckleymi.bandcamp.com/album/in-service-of-a-feeling">In Service of a Feeling by Lemix J Buckley</a></iframe>
             </div>
+        </div>
+            <div class="row">
 
-            <div class="samples-cell" id="sincerely">
+            <div class="col-sm-6 col-lg-4 col-xl-3 samples-cell" id="sincerely">
                 <a href="http://sincerelytheband.bandcamp.com/album/sweet-talk">"Sweet Talk" by Sincerely</a>
                 <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1088458033/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/track=4073460770/transparent=true/" seamless><a href="http://sincerelytheband.bandcamp.com/album/sweet-talk">Sweet Talk by Sincerely</a></iframe>
             </div>
 
-            <div class="samples-cell" id="lutes">
+            <div class="col-sm-6 col-lg-4 col-xl-3 samples-cell" id="lutes">
                 <a href="http://lutes.bandcamp.com/album/sweet-isolate-single">"Sweet Isolate" by Lutes</a>
                 <iframe src="https://bandcamp.com/EmbeddedPlayer/album=408130175/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://lutes.bandcamp.com/album/sweet-isolate-single">Sweet Isolate ~ single by Lutes</a></iframe>
             </div>
 
-            <div class="samples-cell" id="sealife">
+            <div class="col-sm-6 col-lg-4 col-xl-3 samples-cell" id="sealife">
                 <a href="http://sseeaalliiffee.bandcamp.com/track/bodhi-wave-feat-veronica-topacio">"Bodhi Wave (feat. Veronica Topacio)" by Sealife</a>
                 <iframe src="https://bandcamp.com/EmbeddedPlayer/track=1170964089/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://sseeaalliiffee.bandcamp.com/track/bodhi-wave-feat-veronica-topacio">Bodhi Wave (feat. Veronica Topacio) by Sealife</a></iframe>
             </div>
 
-            <div class="samples-cell" id="sea-salt">
-                <a href="http://seasalt.bandcamp.com/album/same">Same by Sea Salt</a>
+            <div class="col-sm-6 col-lg-4 col-xl-3 samples-cell" id="sea-salt">
+                <a href="http://seasalt.bandcamp.com/album/same">"Same" by Sea Salt</a>
                 <iframe src="https://bandcamp.com/EmbeddedPlayer/album=739876436/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/track=4170551015/transparent=true/" seamless><a href="http://seasalt.bandcamp.com/album/same">same by Sea Salt</a></iframe>
             </div>
+        </div>
         <!--samples container div-->
-
-      <div id="small-samples-container">
-  
-        <iframe src="https://bandcamp.com/EmbeddedPlayer/track=3879857480/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://lelandblue.bandcamp.com/track/sofia">Sofia... by leland blue</a></iframe>
-    
-        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=2662849432/size=small/bgcol=ffffff/linkcol=0687f5/track=3334948500/transparent=true/" seamless><a href="http://paulcherry.bandcamp.com/album/on-top">On Top by Paul Cherry</a></iframe>
-    
-        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3258479632/size=small/bgcol=ffffff/linkcol=0687f5/track=203580764/transparent=true/" seamless><a href="http://banadu.bandcamp.com/album/peach-beach">Peach Beach by Banadu &amp; Pure Mood</a></iframe>
-    
-        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=533786326/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://lemixjbuckleymi.bandcamp.com/album/in-service-of-a-feeling">In Service of a Feeling by Lemix J Buckley</a></iframe>
-    
-        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1088458033/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://sincerelytheband.bandcamp.com/album/sweet-talk">Sweet Talk by Sincerely</a></iframe>
-    
-        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=408130175/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://lutes.bandcamp.com/album/sweet-isolate-single">Sweet Isolate ~ single by Lutes</a></iframe>
-    
-        <iframe src="https://bandcamp.com/EmbeddedPlayer/track=1170964089/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://sseeaalliiffee.bandcamp.com/track/bodhi-wave-feat-veronica-topacio">Bodhi Wave (feat. Veronica Topacio) by Sealife</a></iframe>
-    
-        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=739876436/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://seasalt.bandcamp.com/album/same">same by Sea Salt</a></iframe>
-      </div>
-
     </section>
 
-    <section class="section" id="about-section">
+    <section class="container section" id="about-section">
         <h2 id="about">About</h2>
         <div id="about-container">
             <h3 class="no-display">Bio</h3>
-            <p class="body-text" id="bio-text">Hi! I'm a freelance audio engineer and indie pop musician living in Seattle, Washington. I have more than ten years' experience recording, mixing, and mastering, and my work has seen over three million streams on Spotify and Apple Music.<br><br>
+            <p id="bio-text">Hi! I'm a freelance audio engineer and indie pop musician living in Seattle, Washington. I have more than ten years' experience recording, mixing, and mastering, and my work has seen over three million streams on Spotify and Apple Music.<br><br>
             I would love the opportunity to mix your single, EP, or full album.  In my home studio, I use high quality converters, studio monitors, and outboard gear to ensure top-tier professionalism. Your satisfication as an artist is my top priority!<br><br>
             To get started, send me an email with a brief description of your goals and I'll get back to you right away. Looking forward to working with you!</p>
         </div>
         </div> <!--end about-container-->
         <h2>Contact</h2>
-        <div class="container" id="contact-container">
-            <div id="email-cell">
-                <div id="email-link">
-                    <a href="mailto:kurtis.a.roy@gmail.com">kurtis.a.roy@gmail.com</a>
+        <div id="contact-container">
+            <a href="mailto:kurtis.a.roy@gmail.com" id="email-link">kurtis.a.roy@gmail.com</a>
+        </div>
+
+        <div class="container" id="social-media-container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="https://www.instagram.com/seasaltmusic/" target="_blank">
+                    <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1583281214/iconmonstr-instagram-13-240_httdre.png" class="social-media-icons"><br>Instagram</a>
+                </div>   
+
+                <div class="col-sm-6">
+                    <a href="https://www.facebook.com/kurtroyaudio/?__tn__=%2Cd%2CP-R&eid=ARBq2vROUo105ajkngHssnkpuR_UrnZafOAHBdFXOBzkKDYyV7hgvHTs-cqdf74zMjyf_rvbz0s-DSuU" target="_blank">
+                    <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1583281214/iconmonstr-facebook-3-240_1_jyyhut.png" class="social-media-icons"><br>Facebook</a>
                 </div>
+                    
             </div>
-        <div id="social-media-container">
-            <div>
-                <a href="https://www.instagram.com/seasaltmusic/" target="_blank">
-                    <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1583281214/iconmonstr-instagram-13-240_httdre.png" class="social-media-icons"><br>Instagram</a></div>   
-            <div>
-                <a href="https://www.facebook.com/kurtroyaudio/?__tn__=%2Cd%2CP-R&eid=ARBq2vROUo105ajkngHssnkpuR_UrnZafOAHBdFXOBzkKDYyV7hgvHTs-cqdf74zMjyf_rvbz0s-DSuU" target="_blank">
-                    <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1583281214/iconmonstr-facebook-3-240_1_jyyhut.png" class="social-media-icons"><br>Facebook</a></div>
-            <div>
-                <a href="https://seasalt.bandcamp.com/" target="_blank">
+
+                <div class="row">    
+                <div class="col-sm-6">
+                    <a href="https://seasalt.bandcamp.com/" target="_blank">
                     <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1595015283/bandcamp_tpcujj.png" class="social-media-icons"><br>Bandcamp</a></div>
-            <div>
+            <div class="col-sm-6 col-lg-6">
                 <a href="https://open.spotify.com/artist/5AahDCyki46rJWc8EcxbwM?si=SWxaEGknReGWYm9F3pZqtQ" target="_blank">
                     <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1583281251/iconmonstr-spotify-1-240_1_k0jlo7.png" class="social-media-icons"><br>Spotify</a></div>
-            <div>
+                </div>
+                <div class="row">
+            <div class="col-sm-6">
                 <a href="https://www.fiverr.com/kurtroy/professionally-mix-your-album-or-ep?context_referrer=user_page&ref_ctx_id=6e479930-9dfe-4d04-8afe-acccd9d21b97&pckg_id=1&pos=1" target="_blank">
                     <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1594933999/fiverr_ndngnx.png" class="social-media-icons"><br>Fiverr</a></div>
           
-            <div>
+            <div class="col-sm-6  col-lg-6">
                 <a href="https://www.linkedin.com/in/kurtis-roy-551572157/"target="_blank">
                     <img src="https://res.cloudinary.com/dsldlqqsb/image/upload/v1583456755/iconmonstr-linkedin-3-64_idibiy.png" class="social-media-icons"><br>LinkedIn</a></div>
                 </div>
+            </div>
+            </div>
             </div> <!--end social media container-->
         </div>
     </section>
 
     <div id="bottom-background">
+
     <section id="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-main-container">
-          <details><summary>What's your turnaround time?</summary>
-            <div class="answer-text">This depends on how large your project is and how many tracks you’re working on. For singles,
+        <div class="container-fluid">
+            <h2>Frequently Asked Questions</h2>
+            <div class="question-container" id="faq-main-container">
+                <details><summary>What's your turnaround time?</summary>
+                     <div class="answer-text">This depends on how large your project is and how many tracks you’re working on. For singles,
                 I’d say about a week. For EPs and albums, that can take anywhere from a few weeks to a
                 month. If you need a mix by a deadline, let me know so I can accommodate that.
                 </div></details>
@@ -292,6 +298,14 @@
             </footer>
         </div> <!--end of footer container-->
     </section>
+      <!--JQuery-->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+      <!--Popper.js-->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  
+      <!--Bootstrap's Javascript plugins-->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </div>
 </html>
