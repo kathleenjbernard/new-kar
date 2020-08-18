@@ -43,6 +43,10 @@ nav > a:visited {
   text-transform: uppercase;
 }
 
+.navbar-nav li:hover {
+  color: pink;
+}
+
 #nav-name {
   font-family: 'cedarville cursive';
   font-size: 2rem;
@@ -119,16 +123,21 @@ details > summary {
       background-color: #64a6bd;
   }
 
-  #samples-container {
+  #samples-section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .samples-cell {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    min-height: 100px;
-    height: auto;
+    height: 400px;
+    width: 400px;
+    background-color: #e2cbd82d;
+    border: 1rem solid white; 
   }
 
   .samples-cell a {
@@ -137,7 +146,6 @@ details > summary {
     margin-right: auto;
     padding: 0.5rem;
     font-weight: bold;
-    border-top: 1px solid #E2CBD8;
     width: 100%;
     height: auto;
     color: black;
@@ -172,7 +180,8 @@ iframe {
   }
   
 iframe:hover {
-    filter: opacity(50%);
+    border: 1px solid #E2CBD8;
+    background-color: #E2CBD8;
   }
 
   #social-media-container {
@@ -282,6 +291,11 @@ iframe:hover {
 /**L - 992 and up**/ 
 @media (min-width: 992px) {
 
+
+  body {
+    font-size: 110%;
+  }
+
   #hero-image {
     background-color: black;
     background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1595623700/resized-kurt_yddvwj.jpg");
@@ -327,10 +341,9 @@ iframe:hover {
     filter: opacity(50%);
   }
 
-  .nav-item:hover {
+  .navbar-nav li:hover {
     color: pink;
   }
-
   #footer-container-wrapper {
     background: #E2CBD8 url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1596132789/science_4_u3dc9w.png") repeat fixed;
     background-size: 5rem;
@@ -338,8 +351,10 @@ iframe:hover {
     margin: 0;
   }
 
-  #faq-section {
-    border-bottom: 1px solid black;
+  
+
+  .samples-cell a {
+    text-align: center;
   }
 
 }
@@ -347,7 +362,24 @@ iframe:hover {
 /**XL - 1200 and up**/ 
 @media (min-width: 1200px) {
 
+  body {
+    font-size: 100%;
+  }
+
   .navbar-nav {
     margin-left: 30vw;
+  }
+
+  .samples-cell {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     width: 100%;
+   height: 400px;
+   }
+
+  .samples-cell a {
+    height: 100px;
+    size: 1rem;
   }
 }
