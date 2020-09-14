@@ -1,5 +1,15 @@
 /**XS is base**/
 
+#hero-button {
+  font-size: 1.3rem;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  border-color: white;
+  background-color: black;
+ 
+}
+
 body {
   font-size: 125%;
 }
@@ -56,17 +66,28 @@ main {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 h1 {
-  font: italic 300 2.5rem 'kanit', sans-serif;
+  font: italic 300 2rem 'kanit', sans-serif;
   display: block;
   color: white;
-  background-color: #313a3bc0;
-  margin-top: 75vh;
-  padding: 0.5rem 0 0.5rem;
+  background-color: #000000c0;
+  margin-top: 30vh;
+  padding: 15vh 0 15vh 0;
   line-height: 1;
-  
+  animation-name: fade-in;
+  animation-duration: 5s;
+}
+
+@keyframes fade-in {
+  0% {
+    filter: opacity(0%);
+  }
+  100% {
+    filter: opacity(100%);
+  }
 }
 
 .icon {
@@ -138,6 +159,7 @@ details > summary {
     width: 400px;
     background-color: #e2cbd82d;
     border: 1rem solid white; 
+    overflow: hidden;
   }
 
   .samples-cell a {
@@ -305,10 +327,18 @@ iframe:hover {
     text-align: center;
     margin-top: -150px;
     }
-  
+
     h1 {
-      display: none;
+      font-size: 5rem;
+      padding-bottom: 3rem;
     }
+
+    .navbar-nav {
+      text-align: right;
+      margin-left: 20vw;
+    }
+  
+   
 
     #nav-name {
       font-family: 'cedarville cursive';
