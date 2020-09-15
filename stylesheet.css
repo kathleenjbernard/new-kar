@@ -74,9 +74,9 @@ h1 {
   display: block;
   color: white;
   background-color: #000000c0;
-  margin-top: 30vh;
+  margin-top: 45vh;
   padding: 15vh 0 15vh 0;
-  line-height: 1;
+  line-height: 1.5;
   animation-name: fade-in;
   animation-duration: 5s;
 }
@@ -183,10 +183,10 @@ details > summary {
   
   #hero-image {
     background-color: black;
-    background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1581462490/slide_film_12_qa5w4w.jpg");
+    background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600120062/resized-kurt3_subo8x.jpg");
     background-attachment: scroll;
     background-size: cover;
-    background-position: 40% 40%;
+    background-position: 70% 60%;
     text-align: center;
     margin-top: -100px;
     }
@@ -292,6 +292,10 @@ iframe:hover {
     width: 100%;
     padding-bottom: 2rem;
   }
+
+  h1 {
+    margin-top: 50vh;
+  }
 }
 
 /**M - 768px and up**/ 
@@ -299,6 +303,10 @@ iframe:hover {
 
   section h2 {
     font: lighter 3.5rem 'cedarville cursive';
+  }
+
+  h1 {
+    margin-top: 55vh;
   }
 
   #email-link {
@@ -321,7 +329,7 @@ iframe:hover {
 
   #hero-image {
     background-color: black;
-    background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1595623700/resized-kurt_yddvwj.jpg");
+    background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600115888/resized-kurt2_delydw.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -330,8 +338,9 @@ iframe:hover {
     }
 
     h1 {
+      margin-top: 55vh;
       font-size: 5rem;
-      padding: 6rem 0 6rem 0;
+      padding: 2rem 0 3rem 0;
     }
 
     .navbar-nav {
@@ -386,6 +395,7 @@ iframe:hover {
   }
 
   h1 {
+    margin-top: 45vh;
     padding: 10rem 0 10rem 0;
   }
 
@@ -418,6 +428,11 @@ iframe:hover {
 
   #nav-menu {
     margin-left: 39vw;
+  }
+
+  h1 {
+    margin-top: 55vh;
+    padding: 5rem 0 5rem 0;
   }
 
   .samples-cell {
