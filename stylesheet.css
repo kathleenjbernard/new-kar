@@ -70,12 +70,12 @@ main {
 }
 
 h1 {
-  font: italic 300 2.5rem 'kanit', sans-serif;
+  font: italic 300 2rem 'kanit', sans-serif;
   display: block;
   color: white;
   background-color: #000000c0;
-  margin-top: 45vh;
-  padding: 20vh 0 20vh 0;
+  margin-top: 55vh;
+  padding: 10vh 0 10vh 0;
   line-height: 1.5;
   animation-name: fade-in;
   animation-duration: 5s;
@@ -294,7 +294,7 @@ iframe:hover {
   }
 
   h1 {
-    margin-top: 60vh;
+    margin-top: 55vh;
   }
 }
 
@@ -306,13 +306,7 @@ iframe:hover {
   }
 
   h1 {
-    font: italic 300 2.5rem 'kanit', sans-serif;
-    display: block;
-    color: white;
-    background-color: #000000c0;
-    margin-top: 55vh;
-    padding: 5vh 0 5vh 0;
-    line-height: 1.5;
+   
   }
 
   #email-link {
