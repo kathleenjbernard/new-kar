@@ -74,8 +74,8 @@ h1 {
   display: block;
   color: white;
   background-color: #000000c0;
-  margin-top: 55vh;
-  padding: 10vh 0 10vh 0;
+  margin-top: 45vh;
+  padding: 15vh 0 15vh 0;
   line-height: 1.5;
   animation-name: fade-in;
   animation-duration: 5s;
@@ -294,7 +294,7 @@ iframe:hover {
   }
 
   h1 {
-    margin-top: 55vh;
+    margin-top: 50vh;
   }
 }
 
@@ -306,7 +306,7 @@ iframe:hover {
   }
 
   h1 {
-   
+    margin-top: 55vh;
   }
 
   #email-link {
@@ -338,11 +338,9 @@ iframe:hover {
     }
 
     h1 {
-      margin-top: 60vh;
-      font-size: 4.7rem;
+      margin-top: 55vh;
+      font-size: 5rem;
       padding: 2rem 0 3rem 0;
-      line-height: 1;
-  }
     }
 
     .navbar-nav {
@@ -398,6 +396,7 @@ iframe:hover {
 
   h1 {
     margin-top: 45vh;
+    padding: 10rem 0 10rem 0;
   }
 
   main {
@@ -433,6 +432,7 @@ iframe:hover {
 
   h1 {
     margin-top: 55vh;
+    padding: 5rem 0 5rem 0;
   }
 
   .samples-cell {
@@ -448,4 +448,3 @@ iframe:hover {
     size: 1rem;
   }
 }
-
