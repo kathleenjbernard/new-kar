@@ -1,17 +1,40 @@
 /**XS is base**/
 
-#hero-button {
-  font-size: 1.3rem;
-  padding: 0.5rem 3rem 0.5rem 3rem;
-  margin-top: 1rem;
-  text-transform: uppercase;
-  border-color: white;
-  background-color: black;
- 
-}
+
+
+
+
+/****MAIN****/
 
 body {
   font-size: 125%;
+}
+main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+h1 {
+  font: italic 300 2rem 'kanit', sans-serif;
+  display: block;
+  color: white;
+  background-color: #000000c0;
+  margin-top: 45vh;
+  padding: 15vh 0 15vh 0;
+  line-height: 1.5;
+  animation-name: fade-in;
+  animation-duration: 5s;
+}
+
+@keyframes fade-in {
+  0% {
+    filter: opacity(0%);
+  }
+  100% {
+    filter: opacity(100%);
+  }
 }
 
 a:link {
@@ -24,13 +47,7 @@ a:visited {
   font-weight: bold;
 }
 
-#email-link {
-  font-weight: bold;
-}
-
-.no-display {
-  display: none;
-}
+/****NAV*********************************************************/
 
 nav button {
   display: inline;
@@ -62,33 +79,61 @@ nav > a:visited {
   color: white;
 }
 
-main {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
+/****HERO SECTION**********************************************************/
+
+  #hero-image-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh;
+    }
+  
+  #hero-image {
+    background-color: black;
+    background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600120062/resized-kurt3_subo8x.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: 70% 60%;
+    text-align: center;
+    margin-top: -100px;
+    }
+
+#hero-button {
+  font-size: 1.3rem;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  border-color: white;
+  background-color: black;
+  border-radius: 0;
 }
 
-h1 {
-  font: italic 300 2rem 'kanit', sans-serif;
-  display: block;
-  color: white;
-  background-color: #000000c0;
-  margin-top: 45vh;
-  padding: 15vh 0 15vh 0;
-  line-height: 1.5;
-  animation-name: fade-in;
-  animation-duration: 5s;
+#hero-button:hover {
+  background-color: fuchsia;
 }
 
-@keyframes fade-in {
-  0% {
-    filter: opacity(0%);
-  }
-  100% {
-    filter: opacity(100%);
-  }
+#email-link {
+  font-weight: bold;
 }
+
+.no-display {
+  display: none;
+}
+
+/****PROCESS******************************************************************/
+
+ section h2 {
+    text-align: center;
+    font: lighter 3rem 'cedarville cursive';
+    color: #beaab6;
+    line-height: 1.3;
+    margin: 2rem 0 2rem 0;
+  } 
+  
+  section h3 {
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
 
 .icon {
   padding: 0;
@@ -119,11 +164,6 @@ details > summary {
   font-weight: bold;
   padding: 0.5rem 0 0.5rem 0;
 }
-
-#faq-section > .answer-text {
-  padding: 1rem 0 1rem 0;
-}
-
 .number-image {
   width: 75px;
   height: auto;
@@ -143,6 +183,14 @@ details > summary {
   #process-cell-4 {
       background-color: #64a6bd;
   }
+  
+  #gear-story-container {
+    display: block;
+    margin: 20vh auto 20vh auto;
+    width: 400px;
+  }
+
+/***SAMPLES*********************************************************************/
 
   #samples-section {
     display: block;
@@ -174,24 +222,7 @@ details > summary {
     text-align: center;
    
   }
-
-  #hero-image-container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100vh;
-    }
-  
-  #hero-image {
-    background-color: black;
-    background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1600120062/resized-kurt3_subo8x.jpg");
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: 70% 60%;
-    text-align: center;
-    margin-top: -100px;
-    }
-
-iframe {
+  iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -205,8 +236,20 @@ iframe:hover {
     border: 1px solid #E2CBD8;
     background-color: #E2CBD8;
   }
+/***ABOUT*********************************************************************/
 
-  #social-media-container {
+#about-container {
+
+}
+
+.bio-text {
+  
+}
+
+
+
+/***CONTACT*********************************************************************/
+ #social-media-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -220,37 +263,8 @@ iframe:hover {
     width: 50px;
     height: auto;
     margin: 1rem;
-  }
-
-  .question-container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    max-width: 400px;
-  }
-
-  #gear-story-container {
-    display: block;
-    margin: 20vh auto 20vh auto;
-    width: 400px;
-  }
-
-  section h2 {
-    text-align: center;
-    font: lighter 3rem 'cedarville cursive';
-    color: #beaab6;
-    line-height: 1.3;
-    margin: 2rem 0 2rem 0;
-  }
-
-  section h3 {
-    text-align: center;
-    padding: 1rem;
-    text-transform: uppercase;
-  }
-
+  } 
+  
   #email-link {
     text-align: center;
   }
@@ -265,6 +279,19 @@ iframe:hover {
     background: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1595535631/atom_gdlrho.png") no-repeat;
     background-size: contain;
   }
+/***FAQ*********************************************************************/
+#faq-section > .answer-text {
+  padding: 1rem 0 1rem 0;
+}
+.question-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 400px;
+  }
+/***FOOTER*********************************************************************/
 
   #footer-container {
     display: grid;
